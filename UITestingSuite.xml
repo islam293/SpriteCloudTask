@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="UI Test Suite">
+    <test thread-count="5" name="SpriteCloud">
+        <classes>
+            <class name="uiTests.LinksTest">
+                <methods>
+                    <include name="testLinks"/>
+                </methods>
+            </class>
+            <class name="uiTests.ClickTest">
+                <methods>
+                    <include name="clickTest"/>
+                </methods>
+            </class>
+            <class name="uiTests.ScrollbarsTest">
+                <methods>
+                    <include name="scrollBarTest"/>
+                </methods>
+            </class>
+            <class name="uiTests.SampleAppTest">
+                <methods>
+                    <include name="sampleAppTest"/>
+                </methods>
+            </class>
+            <class name="uiTests.DynamicTableTest">
+                <methods>
+                    <include name="dynamicTableTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
