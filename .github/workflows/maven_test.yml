@@ -28,7 +28,8 @@ jobs:
          ls -la src/test/java/apiTests/resources
       shell: bash
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+#       run: mvn -B package --file pom.xml
+      run: mvn clean test
     - name: Run script file 2
       run: |
          pwd
