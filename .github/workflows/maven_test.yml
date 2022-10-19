@@ -44,6 +44,8 @@ jobs:
       run: |
          pwd
          ls -la
+         git config user.email "islamismail3@gmail.com"
+         git config user.name "islam293"
          git add allure-history
          git commit -m "adding allure history"
          git push -u origin main
