@@ -38,7 +38,7 @@ jobs:
         allure_results: allure-results
 #         gh_pages: gh-pages
 #         allure_report: allure-report
-        allure_history: allure-history
+        allure_history: results
     - name: Upload Allure History to Github
       if: always()
       run: |
@@ -46,7 +46,7 @@ jobs:
          ls -la
          git config user.email "islamismail3@gmail.com"
          git config user.name "islam293"
-         git add allure-history
+         git add results
          git commit -m "adding allure history"
          git push -u origin main
       shell: bash
@@ -56,4 +56,4 @@ jobs:
       env:
         PERSONAL_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: allure-history
+        PUBLISH_DIR: results
