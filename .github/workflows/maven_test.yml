@@ -25,7 +25,7 @@ jobs:
     - name: Run script file
       run: |
          pwd
-         ls -la src
+         ls -la src/test/java/apiTests/resources
       shell: bash
 #     - name: Build with Maven
 #       run: mvn -B package --file pom.xml
