@@ -14,7 +14,7 @@ public class ReadingJsonfile {
     public static String readingJsonFiles(String fileName) {
 
         try {
-            fileStream = new FileInputStream("src\\test\\java\\apiTests\\resources\\" + fileName);
+            fileStream = new FileInputStream("src/test/java/apiTests/resources/" + fileName);
             streamedBody = new String(IOUtils.toByteArray(fileStream));
         } catch (IOException e) {
             e.printStackTrace();
