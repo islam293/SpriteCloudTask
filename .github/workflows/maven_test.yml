@@ -33,12 +33,21 @@ jobs:
     - name: Create Allure report
       uses: simple-elf/allure-report-action@master
       if: always()
-      id: allure-report
+#       id: allure-report
       with:
         allure_results: allure-results
-        gh_pages: gh-pages
-        allure_report: allure-report
+#         gh_pages: gh-pages
+#         allure_report: allure-report
         allure_history: allure-history
+    - name: Upload Allure History to Github
+      if: always()
+      run: |
+         pwd
+         ls -la
+         git add allure-history
+         git commit -m "adding allure history"
+         git push -u origin main
+      shell: bash
     - name: Deploy report to Github Pages
       if: always()
       uses: peaceiris/actions-gh-pages@v2
