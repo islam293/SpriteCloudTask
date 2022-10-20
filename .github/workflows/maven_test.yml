@@ -65,3 +65,4 @@ jobs:
            -H "multipart/form-data"
            -F "file[]=@target/surefire-reports/TEST-TestSuite.xml"
            "https://app.calliope.pro/api/v2/profile/${{ secrets.CALLIOPE_PROFILE_ID }}/import/cucumber?tag[]=myos&tag[]=myplatform&tag[]=mybuild"
+
