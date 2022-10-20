@@ -57,3 +57,10 @@ jobs:
         PERSONAL_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: results
+        
+    - name: Upload results to Calliope
+      run: curl -X POST
+           -H "x-api-key:${{ secrets.CALLIOPE_API_KEY }}"
+           -H "multipart/form-data"
+           -F "file[]=@target/surefire-reports/TEST-TestSuite.xml"
+           "https://app.calliope.pro/api/v2/profile/${{ secrets.CALLIOPE_PROFILE_ID }}/import/cucumber?tag[]=myos&tag[]=myplatform&tag[]=mybuild"
