@@ -1,131 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="16" passed="7" failed="1" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-19T22:50:58 EET" name="All Tests Suite" finished-at="2022-10-19T22:53:27 EET" duration-ms="148809">
+  <suite started-at="2022-10-20T00:33:00 EET" name="Default Suite" finished-at="2022-10-20T00:33:11 EET" duration-ms="10715">
     <groups>
     </groups>
-    <test started-at="2022-10-19T22:50:58 EET" name="SpriteCloud" finished-at="2022-10-19T22:53:27 EET" duration-ms="148809">
-      <class name="uiTests.LinksTest">
-        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:uiTests.LinksTest@288a4658]" started-at="2022-10-19T22:50:51 EET" name="startDriver" finished-at="2022-10-19T22:50:58 EET" duration-ms="6650" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startDriver -->
-        <test-method is-config="true" signature="navigateToURL()[pri:0, instance:uiTests.LinksTest@288a4658]" started-at="2022-10-19T22:50:58 EET" name="navigateToURL" finished-at="2022-10-19T22:51:05 EET" duration-ms="6759" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToURL -->
-        <test-method signature="testLinks()[pri:0, instance:uiTests.LinksTest@288a4658]" started-at="2022-10-19T22:51:05 EET" name="testLinks" finished-at="2022-10-19T22:51:47 EET" duration-ms="42430" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at org.testng.Assert.assertTrue(Assert.java:66)
-at uiTests.LinksTest.testLinks(LinksTest.java:14)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLinks -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:uiTests.LinksTest@288a4658]" started-at="2022-10-19T22:53:27 EET" name="closeBrowser" finished-at="2022-10-19T22:53:27 EET" duration-ms="807" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- uiTests.LinksTest -->
-      <class name="uiTests.SampleAppTest">
-        <test-method is-config="true" signature="navigateToURL()[pri:0, instance:uiTests.SampleAppTest@3e6fd0b9]" started-at="2022-10-19T22:52:43 EET" name="navigateToURL" finished-at="2022-10-19T22:52:50 EET" duration-ms="6916" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToURL -->
-        <test-method signature="sampleAppTest()[pri:0, instance:uiTests.SampleAppTest@3e6fd0b9]" started-at="2022-10-19T22:52:50 EET" name="sampleAppTest" finished-at="2022-10-19T22:52:58 EET" duration-ms="7451" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sampleAppTest -->
-      </class> <!-- uiTests.SampleAppTest -->
+    <test started-at="2022-10-20T00:33:00 EET" name="SpriteCloudTask" finished-at="2022-10-20T00:33:11 EET" duration-ms="10715">
       <class name="apiTests.tests.Tests">
-        <test-method signature="createNewPetTest()[pri:1, instance:apiTests.tests.Tests@697446d4]" started-at="2022-10-19T22:53:12 EET" name="createNewPetTest" finished-at="2022-10-19T22:53:22 EET" duration-ms="9838" status="PASS">
+        <test-method signature="createNewPetTest()[pri:1, instance:apiTests.tests.Tests@27f3b6d6]" started-at="2022-10-20T00:33:00 EET" name="createNewPetTest" finished-at="2022-10-20T00:33:10 EET" duration-ms="10374" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewPetTest -->
-        <test-method signature="DeletePetTest()[pri:2, instance:apiTests.tests.Tests@697446d4]" started-at="2022-10-19T22:53:22 EET" name="DeletePetTest" finished-at="2022-10-19T22:53:24 EET" duration-ms="2415" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeletePetTest -->
-        <test-method signature="EditPetDetailsTest()[pri:3, instance:apiTests.tests.Tests@697446d4]" started-at="2022-10-19T22:53:24 EET" name="EditPetDetailsTest" finished-at="2022-10-19T22:53:27 EET" duration-ms="2470" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EditPetDetailsTest -->
       </class> <!-- apiTests.tests.Tests -->
-      <class name="uiTests.DynamicTableTest">
-        <test-method is-config="true" signature="navigateToURL()[pri:0, instance:uiTests.DynamicTableTest@7fcff1b9]" started-at="2022-10-19T22:52:58 EET" name="navigateToURL" finished-at="2022-10-19T22:53:05 EET" duration-ms="6941" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToURL -->
-        <test-method signature="dynamicTableTest()[pri:0, instance:uiTests.DynamicTableTest@7fcff1b9]" started-at="2022-10-19T22:53:05 EET" name="dynamicTableTest" finished-at="2022-10-19T22:53:12 EET" duration-ms="7188" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dynamicTableTest -->
-      </class> <!-- uiTests.DynamicTableTest -->
-      <class name="uiTests.ClickTest">
-        <test-method is-config="true" signature="navigateToURL()[pri:0, instance:uiTests.ClickTest@1e411d81]" started-at="2022-10-19T22:51:47 EET" name="navigateToURL" finished-at="2022-10-19T22:52:22 EET" duration-ms="34737" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToURL -->
-        <test-method signature="clickTest()[pri:0, instance:uiTests.ClickTest@1e411d81]" started-at="2022-10-19T22:52:22 EET" name="clickTest" finished-at="2022-10-19T22:52:29 EET" duration-ms="7088" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickTest -->
-      </class> <!-- uiTests.ClickTest -->
-      <class name="uiTests.ScrollbarsTest">
-        <test-method is-config="true" signature="navigateToURL()[pri:0, instance:uiTests.ScrollbarsTest@53b98ff6]" started-at="2022-10-19T22:52:29 EET" name="navigateToURL" finished-at="2022-10-19T22:52:36 EET" duration-ms="6728" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToURL -->
-        <test-method signature="scrollBarTest()[pri:0, instance:uiTests.ScrollbarsTest@53b98ff6]" started-at="2022-10-19T22:52:36 EET" name="scrollBarTest" finished-at="2022-10-19T22:52:43 EET" duration-ms="7457" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scrollBarTest -->
-      </class> <!-- uiTests.ScrollbarsTest -->
-    </test> <!-- SpriteCloud -->
-  </suite> <!-- All Tests Suite -->
+    </test> <!-- SpriteCloudTask -->
+  </suite> <!-- Default Suite -->
 </testng-results>
