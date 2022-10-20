@@ -18,40 +18,34 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+
     - name: Set up JDK 17
       uses: actions/setup-java@v3
       with:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-#     - name: Run script file
-#       run: |
-#          pwd
-#          ls -la src/test/java/apiTests/resources
-#       shell: bash
+
     - name: Build with Maven
       run: mvn package -B --file pom.xml
-#       run: mvn clean test
+
     - name: Create Allure report
       uses: simple-elf/allure-report-action@master
       if: always()
-#       id: allure-report
       with:
         allure_results: allure-results
-#         gh_pages: gh-pages
-#         allure_report: allure-report
         allure_history: results
+
     - name: Upload Allure History to Github
       if: always()
       run: |
-         pwd
-         ls -la
          git config user.email "islamismail3@gmail.com"
          git config user.name "islam293"
          git add results
          git commit -m "adding allure history"
          git push -u origin main
       shell: bash
+
     - name: Deploy report to Github Pages
       if: always()
       uses: peaceiris/actions-gh-pages@v2
@@ -65,7 +59,5 @@ jobs:
       run: curl -X POST
            -H "x-api-key:${{ secrets.CALLIOPE_API_KEY }}"
            -H "multipart/form-data"
-           -H "Content-Type:text/plain; charset=UTF-8"
-           -F "file=@target/surefire-reports/TEST-TestSuite.xml"
+           -F "file[]=@target/surefire-reports/TEST-TestSuite.xml"
            "https://app.calliope.pro/api/v2/profile/${{ secrets.CALLIOPE_PROFILE_ID }}/import/cucumber"
-
