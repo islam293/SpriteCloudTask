@@ -59,6 +59,7 @@ jobs:
         PUBLISH_DIR: results
         
     - name: Upload results to Calliope
+      if: always()
       run: curl -X POST
            -H "x-api-key:${{ secrets.CALLIOPE_API_KEY }}"
            -H "multipart/form-data"
